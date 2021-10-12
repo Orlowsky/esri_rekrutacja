@@ -42,6 +42,11 @@ function App(props: any) {
   const clearDataUrl = (): void => {
     setUrl("");
     setAdress([]);
+    setLocation({
+      lat: 51.079,
+      lng: 21.025,
+    });
+    setZoom(13);
   };
   const setNewLocationFunction = (newLocation: any) => {
     setLocation(newLocation);
@@ -55,7 +60,6 @@ function App(props: any) {
     return adress.length;
   };
 
-  
   return (
     <div className="App">
       <p style={{ textAlign: "left", width: "80%" }}>Search Street</p>
