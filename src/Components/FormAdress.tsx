@@ -23,7 +23,7 @@ const FormAdress = (props: { setDataUrl: any; clearDataUrl: any }) => {
     } else {
       adressNumer = ``;
     }
-    console.log("wykonaj");
+   
     props.setDataUrl(adressUlica + adressNumer);
   };
   const onClickChange = () => {

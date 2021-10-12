@@ -25,7 +25,6 @@ function App(props: any) {
       fetch(url, { headers })
         .then((response) => response.json())
         .then((data) => {
-          console.log(data.features);
           setAdress(data.features);
         });
     }
@@ -56,9 +55,7 @@ function App(props: any) {
     return adress.length;
   };
 
-  console.log(adress, url);
-
-  console.log(location);
+  
   return (
     <div className="App">
       <p style={{ textAlign: "left", width: "80%" }}>Search Street</p>
