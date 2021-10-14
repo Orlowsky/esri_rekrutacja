@@ -39,7 +39,6 @@ function App(props: any) {
     const partUrl3: string =
       `${process.env.REACT_APP_WHOLE_QUERY}`
     const fullUrl: string = partUrl1 + urlQueryData + partUrl3;
-    console.log(fullUrl)
     setUrl(fullUrl);
   };
 
@@ -64,7 +63,6 @@ function App(props: any) {
     
   };
  let handleZoomChanged = ()=>{
-    console.log(refContainer.current.map_.zoom);
     setZoom(refContainer.current.map_.zoom)
   }
 
